@@ -83,7 +83,7 @@
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="/mapa">
                     <i class="pe-7s-map-marker"></i>
                     <p>Maps</p>
                 </a>

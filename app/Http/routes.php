@@ -15,8 +15,8 @@ Route::get('/', function () {
     return view('index');
 });
 
-//Route::get('/mapa', function () {
-//    return view('mapa');
-//});
-//
-//
+Route::get('/mapa', function () {
+    return view('mapa');
+});
+
+
