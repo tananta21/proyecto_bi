@@ -12,5 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+//Route::get('/mapa', function () {
+//    return view('mapa');
+//});
+//
+//
