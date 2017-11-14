@@ -19,4 +19,19 @@ Route::get('/mapa', function () {
     return view('mapa');
 });
 
+Route::get('/resumen/meses', function () {
+    return view('resumen_meses');
+});
+//api
+Route::get('/api/resumen/meses/',[
+        'as'=> 'resumen.meses',
+        'uses'=>'DahsboardController@resumenMeses']
+);
+
+
+
+
+
+
+
 
