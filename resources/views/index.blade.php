@@ -74,7 +74,7 @@
         </div>
 
         <ul class="nav">
-            <li class="active">
+            <li  class="{{ Request::is('/') ? 'active' : '' }}">
                 <a href="/">
                     <i class="pe-7s-graph"></i>
                     <p>Dashboard</p>
@@ -86,8 +86,8 @@
                     <p>Resumen por países</p>
                 </a>
             </li>
-            <li>
-                <a href="/resumen/meses">
+            <li class="{{ Request::is('resumen/meses') ? 'active' : '' }}">
+                <a href="{{ url('/resumen/meses') }}">
                     <i class="pe-7s-news-paper"></i>
                     <p>Registro mensual</p>
                 </a>

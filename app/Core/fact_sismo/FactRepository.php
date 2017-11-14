@@ -9,7 +9,6 @@
 namespace App\Core\fact_sismo;
 
 use App\Core\Contracts\BaseRepositoryInterface;
-use App\Core\fact_sismo\FactSismo;
 
 class FactRepository implements BaseRepositoryInterface
 {
@@ -24,16 +23,25 @@ class FactRepository implements BaseRepositoryInterface
     public function resumenMeses($pais_id)
     {
         return $registro = \DB::select('SELECT
-                                            dim_tiempo.mes,
-                                            COUNT(*) num_sismos
-                                        FROM
-                                            fact_sismos
-                                        INNER JOIN dim_tiempo
-                                        ON fact_sismos.tiempo_id = dim_tiempo.id
-                                            WHERE
-                                                fact_sismos.pais_id = '.$pais_id.'
-                                        GROUP BY dim_tiempo.mes
-                                        ORDER BY MONTH(dim_tiempo.fecha_completa)');
+	-- MONTHNAME(fact_sismos.fecha_sismo) as mes,
+CASE WHEN MONTH(fact_sismos.fecha_sismo) = 1 THEN "enero"
+WHEN MONTH(fact_sismos.fecha_sismo) = 2 THEN "febrero"
+WHEN MONTH(fact_sismos.fecha_sismo) = 3 THEN "marzo"
+WHEN MONTH(fact_sismos.fecha_sismo) = 4 THEN "abril"
+WHEN MONTH(fact_sismos.fecha_sismo) = 5 THEN "mayo"
+WHEN MONTH(fact_sismos.fecha_sismo) = 6 THEN "junio"
+WHEN MONTH(fact_sismos.fecha_sismo) = 7 THEN "julio"
+WHEN MONTH(fact_sismos.fecha_sismo) = 8 THEN "agosto"
+WHEN MONTH(fact_sismos.fecha_sismo) = 9 THEN "septiembre"
+WHEN MONTH(fact_sismos.fecha_sismo) = 10 THEN "octubre"
+WHEN MONTH(fact_sismos.fecha_sismo) = 11 THEN "noviembre"
+WHEN MONTH(fact_sismos.fecha_sismo) = 12 THEN "diciembre" END as mes,
+	COUNT(*) num_sismos
+FROM
+	fact_sismos
+WHERE
+		fact_sismos.pais_id = '.$pais_id.'
+GROUP BY MONTH(fact_sismos.fecha_sismo)');
     }
 
     public function all()
