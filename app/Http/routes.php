@@ -15,9 +15,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/mapa', function () {
-    return view('mapa');
-});
+
 
 Route::get('/resumen/meses', function () {
     return view('resumen_meses');
@@ -27,6 +25,18 @@ Route::get('/api/resumen/meses/',[
         'as'=> 'resumen.meses',
         'uses'=>'DahsboardController@resumenMeses']
 );
+
+Route::get('/resumen/paises', function () {
+    return view('resumen_paises');
+});
+//api
+Route::get('/api/resumen/paises/',[
+        'as'=> 'resumen.paises',
+        'uses'=>'DahsboardController@resumenPaises']
+);
+
+
+
 
 
 

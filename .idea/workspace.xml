@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac2eebc2-1d31-4616-8cd5-003f37b682d4" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/DahsboardController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/DahsboardController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Core/fact_sismo/FactRepository.php" afterPath="$PROJECT_DIR$/app/Core/fact_sismo/FactRepository.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/mapa.blade.php" afterPath="$PROJECT_DIR$/resources/views/mapa.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/resumen_paises.blade.php" afterPath="$PROJECT_DIR$/resources/views/resumen_paises.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="proyecto_bi.iws" />
@@ -26,20 +30,7 @@
     <favorites_list name="proyecto_bi" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="FactRepository.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Core/fact_sismo/FactRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="40" selection-start="1245" selection-end="1245" vertical-scroll-proportion="0.6797153" vertical-offset="358" max-vertical-offset="2520">
-              <folding>
-                <marker date="1510633787079" expanded="true" signature="439:1153" placeholder="SELECT -- MO..." />
-                <marker date="1510633787079" expanded="true" signature="447:492" placeholder="-- MONTHNAME..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -52,16 +43,16 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/resumen_paises.blade.php" />
         <option value="$PROJECT_DIR$/app/Core/fact_sismo/FactSismo.php" />
-        <option value="$PROJECT_DIR$/resources/views/mapa.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Exceptions/Handler.php" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/DahsboardController.php" />
         <option value="$PROJECT_DIR$/resources/views/resumen_meses.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Core/fact_sismo/FactRepository.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/DahsboardController.php" />
+        <option value="$PROJECT_DIR$/resources/views/mapa.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/resumen_paises.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
       </list>
     </option>
   </component>
@@ -98,6 +89,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -126,6 +118,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="proyecto_bi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="proyecto_bi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="proyecto_bi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="proyecto_bi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -144,11 +168,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fact_sismo" />
+              <option name="myItemId" value="Http" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -166,13 +186,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Core" />
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -219,14 +242,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.260574" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26812688" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -258,21 +281,51 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/mapa.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="28" selection-start="2602" selection-end="2602" vertical-scroll-proportion="0.0" vertical-offset="1380" max-vertical-offset="8800">
-          <folding />
+        <state line="52" column="30" selection-start="1944" selection-end="1944" vertical-scroll-proportion="0.0" vertical-offset="769" max-vertical-offset="2440">
+          <folding>
+            <marker date="1510641743159" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1510641743159" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1510641743159" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/resumen_meses.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2240">
+        <state line="47" column="16" selection-start="1852" selection-end="1883" vertical-scroll-proportion="0.0" vertical-offset="551" max-vertical-offset="2240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/mapa.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="29" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.0" vertical-offset="511" max-vertical-offset="2160">
           <folding>
-            <marker date="1510626086437" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1510626086437" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1510626086437" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1510641743159" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1510641743159" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1510641743159" expanded="false" signature="-1:-1" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/resumen_meses.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="16" selection-start="1852" selection-end="1883" vertical-scroll-proportion="0.0" vertical-offset="551" max-vertical-offset="2240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="28" selection-start="2602" selection-end="2602" vertical-scroll-proportion="0.0" vertical-offset="1380" max-vertical-offset="8800" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/resumen_meses.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2240">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -298,24 +351,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Core/Contracts/BaseRepositoryInterface.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="588">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="588" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Core/fact_sismo/FactSismo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="267" selection-end="267" vertical-scroll-proportion="0.5338078" vertical-offset="0" max-vertical-offset="562" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/resumen_paises.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="11" selection-start="0" selection-end="119" vertical-scroll-proportion="-3.8461537" vertical-offset="0" max-vertical-offset="220" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/mapa.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="68" selection-start="241" selection-end="241" vertical-scroll-proportion="-8.461538" vertical-offset="0" max-vertical-offset="1580" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/app.php">
@@ -358,27 +399,6 @@
         <state line="7" column="14" selection-start="144" selection-end="144" vertical-scroll-proportion="0.23809524" vertical-offset="0" max-vertical-offset="588" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="12" selection-start="618" selection-end="637" vertical-scroll-proportion="0.569395" vertical-offset="0" max-vertical-offset="680" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DahsboardController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="46" selection-start="559" selection-end="559" vertical-scroll-proportion="0.5338078" vertical-offset="220" max-vertical-offset="2180" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/resumen_meses.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1960">
-          <folding>
-            <marker date="1510626086437" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1510626086437" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1510626086437" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/helpers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="788" column="32" selection-start="17752" selection-end="17752" vertical-scroll-proportion="0.37686568" vertical-offset="15478" max-vertical-offset="16040" />
@@ -389,20 +409,62 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="14920" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/resumen_meses.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="28" selection-start="2602" selection-end="2602" vertical-scroll-proportion="0.29143897" vertical-offset="1380" max-vertical-offset="8800">
+        <state line="47" column="16" selection-start="1852" selection-end="1883" vertical-scroll-proportion="-19.576923" vertical-offset="431" max-vertical-offset="2240">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Core/fact_sismo/FactRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="40" selection-start="1245" selection-end="1245" vertical-scroll-proportion="0.6797153" vertical-offset="358" max-vertical-offset="2520">
+        <state line="54" column="28" selection-start="1534" selection-end="1535" vertical-scroll-proportion="0.6312057" vertical-offset="624" max-vertical-offset="2780">
           <folding>
-            <marker date="1510633787079" expanded="true" signature="439:1153" placeholder="SELECT -- MO..." />
-            <marker date="1510633787079" expanded="true" signature="447:492" placeholder="-- MONTHNAME..." />
+            <marker date="1510636415805" expanded="true" signature="-1:-1" placeholder="SELECT dim_p..fact_sismos..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DahsboardController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="48" selection-start="822" selection-end="822" vertical-scroll-proportion="0.58687943" vertical-offset="269" max-vertical-offset="2280">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/resumen_paises.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="5" selection-start="2996" selection-end="2996" vertical-scroll-proportion="1.7132486" vertical-offset="936" max-vertical-offset="2000">
+          <folding>
+            <marker date="1510641910584" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1510641910584" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1510641910584" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/mapa.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="6" selection-start="0" selection-end="2996" vertical-scroll-proportion="0.14519057" vertical-offset="0" max-vertical-offset="2000">
+          <folding>
+            <marker date="1510641743159" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1510641743159" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1510641743159" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="31" selection-start="742" selection-end="742" vertical-scroll-proportion="0.6028369" vertical-offset="60" max-vertical-offset="880">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="25" selection-start="3470" selection-end="3470" vertical-scroll-proportion="0.50816697" vertical-offset="1740" max-vertical-offset="8800">
+          <folding />
         </state>
       </provider>
     </entry>

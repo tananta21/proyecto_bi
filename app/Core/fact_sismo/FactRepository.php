@@ -44,6 +44,19 @@ WHERE
 GROUP BY MONTH(fact_sismos.fecha_sismo)');
     }
 
+    public function resumenPaises(){
+        return $registro = \DB::select('SELECT
+	dim_paises.code,
+	count(*) as num_sismos
+FROM
+	fact_sismos
+INNER JOIN dim_paises on fact_sismos.pais_id = dim_paises.id
+WHERE
+	fact_sismos.mag BETWEEN 6
+AND 10.5
+GROUP BY dim_paises.code');
+    }
+
     public function all()
     {
 

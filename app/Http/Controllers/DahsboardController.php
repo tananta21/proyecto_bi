@@ -32,6 +32,16 @@ class DahsboardController extends Controller
             return response()->json($datos);
         }
     }
+    public function resumenPaises(){
+        $query = $this->repoFactSismo->resumenPaises();
+        $datos = array($query);
+        if (empty($datos)) {
+            return 0;
+        } else {
+            return response()->json($datos);
+        }
+    }
+
 
 
     /**

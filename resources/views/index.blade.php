@@ -80,8 +80,8 @@
                     <p>Dashboard</p>
                 </a>
             </li>
-            <li>
-                <a href="">
+            <li  class="{{ Request::is('resumen/paises') ? 'active' : '' }}">
+                <a href="{{ url('/resumen/paises') }}">
                     <i class="pe-7s-note2"></i>
                     <p>Resumen por países</p>
                 </a>
@@ -99,7 +99,7 @@
                 </a>
             </li>
             <li>
-                <a href="/mapa">
+                <a href="">
                     <i class="pe-7s-map-marker"></i>
                     <p>Maps</p>
                 </a>
