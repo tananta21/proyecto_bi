@@ -8,8 +8,8 @@
 @section("js")
 <script src="https://code.highcharts.com/maps/highmaps.js"></script>
 <script src="https://code.highcharts.com/mapdata/custom/south-america.js"></script>
+<!--script resumen paises-->
 <script>
-
     $(function () {
         window.onload = peticion();
     })
@@ -39,9 +39,7 @@
                     meses=[]
                     cont = cont+1;
                 }
-
                 var data = contenedor;
-
                 // Create the chart
                 Highcharts.mapChart('container', {
                     chart: {
@@ -89,7 +87,5 @@
 
         });
     }
-
-
 </script>
 @show

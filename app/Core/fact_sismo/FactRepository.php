@@ -56,6 +56,30 @@ WHERE
 AND 10.5
 GROUP BY dim_paises.code');
     }
+    public function mapaPaises(){
+        return $registro = \DB::select('SELECT * FROM fact_sismos
+        ');
+    }
+    public function mapaPaisesDetail($pais_id){
+        return $registro = \DB::select('SELECT * FROM fact_sismos
+        WHERE pais_id ='.$pais_id.'');
+    }
+
+    public function mapaPaisesIntens($inten_id){
+        return $registro = \DB::select('SELECT * FROM fact_sismos
+        WHERE intensidad_id ='.$inten_id.'');
+    }
+    public function mapaPaisesIntensDetail($pais_id,$inten_id){
+        return $registro = \DB::select('SELECT * FROM fact_sismos
+        WHERE pais_id ='.$pais_id.'
+        AND intensidad_id ='.$inten_id.'
+        ');
+    }
+
+
+
+
+
 
     public function all()
     {

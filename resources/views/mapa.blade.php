@@ -3,6 +3,7 @@
 <div>
     <div id="container"></div>
 </div>
+
 @endsection
 
 @section("js")
@@ -92,4 +93,5 @@
 
 
 </script>
+
 @show

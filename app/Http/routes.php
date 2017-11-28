@@ -20,6 +20,12 @@ Route::get('/', function () {
 Route::get('/resumen/meses', function () {
     return view('resumen_meses');
 });
+
+Route::get('/mapa/paises', function () {
+    return view('mapa_paises');
+});
+
+
 //api
 Route::get('/api/resumen/meses/',[
         'as'=> 'resumen.meses',
@@ -34,6 +40,13 @@ Route::get('/api/resumen/paises/',[
         'as'=> 'resumen.paises',
         'uses'=>'DahsboardController@resumenPaises']
 );
+
+Route::get('/api/mapa/paises/',[
+        'as'=> 'mapa.paises',
+        'uses'=>'DahsboardController@mapaPaises']
+);
+
+
 
 
 

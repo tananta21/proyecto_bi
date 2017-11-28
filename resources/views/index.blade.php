@@ -24,6 +24,7 @@
 
     <!--  CSS for Demo Purpose, don't include it in your project     -->
     <link href="{{url('/')}}/assets/css/demo.css" rel="stylesheet" />
+    <link href="{{url('/')}}/assets/css/proyecto.css" rel="stylesheet" />
 
 
     <!--     Fonts and icons     -->
@@ -80,6 +81,12 @@
                     <p>Dashboard</p>
                 </a>
             </li>
+            <li  class="{{ Request::is('mapa/paises') ? 'active' : '' }}">
+                <a href="{{ url('/mapa/paises') }}">
+                    <i class="pe-7s-map-marker"></i>
+                    <p>Mapa Sudamérica</p>
+                </a>
+            </li>
             <li  class="{{ Request::is('resumen/paises') ? 'active' : '' }}">
                 <a href="{{ url('/resumen/paises') }}">
                     <i class="pe-7s-note2"></i>
@@ -92,30 +99,24 @@
                     <p>Registro mensual</p>
                 </a>
             </li>
-            <li>
-                <a href="">
-                    <i class="pe-7s-science"></i>
-                    <p>Icons</p>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <i class="pe-7s-map-marker"></i>
-                    <p>Maps</p>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <i class="pe-7s-bell"></i>
-                    <p>Notifications</p>
-                </a>
-            </li>
-            <li class="active-pro">
-                <a href="upgrade.html">
-                    <i class="pe-7s-rocket"></i>
-                    <p>Upgrade to PRO</p>
-                </a>
-            </li>
+<!--            <li>-->
+<!--                <a href="">-->
+<!--                    <i class="pe-7s-science"></i>-->
+<!--                    <p>Icons</p>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <a href="">-->
+<!--                    <i class="pe-7s-bell"></i>-->
+<!--                    <p>Notifications</p>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li class="active-pro">-->
+<!--                <a href="upgrade.html">-->
+<!--                    <i class="pe-7s-rocket"></i>-->
+<!--                    <p>Upgrade to PRO</p>-->
+<!--                </a>-->
+<!--            </li>-->
         </ul>
     </div>
 </div>
@@ -398,7 +399,59 @@
 </div>
 </div>
 
-
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content col-md-12" style="padding: 0rem">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Detalles del Sismo</h5>
+            </div>
+            <div class="modal-body col-md-12" style="padding: 15px 0px">
+                <div class="col-md-6">
+                <form>
+                    <div class="form-group modalDetail__box">
+                        <label for="recipient-name" class="col-form-label modalDetail__label">País</label>
+                        <h4 class="modalDetail__name">PERÚ</h4>
+                    </div>
+                    <div class="form-group modalDetail__box">
+                        <label for="recipient-name" class="col-form-label modalDetail__label">Región del sismo</label>
+                        <h4 class="modalDetail__name">NEAR COAST OF NORTHERN CHILE</h4>
+                    </div>
+                    <div class="form-group modalDetail__box">
+                        <label for="recipient-name" class="col-form-label modalDetail__label">Punto de Ubicación</label>
+                        <h4 class="modalDetail__name">
+                            <span>LAT:</span><span id="det_lat" style="font-weight: bold">18.7</span>
+                            <span style="padding-left: 15px">LONG:</span><span id="det_lon" style="font-weight: bold">-72.7</span>
+                        </h4>
+                    </div>
+                    <div class="form-group modalDetail__box">
+                        <label for="recipient-name" class="col-form-label modalDetail__label">Fecha Sismo</label>
+                        <h4 class="modalDetail__name">jueves, septiembre 14, 2017 @ 07:07 PM</h4>
+                    </div>
+                </form>
+                </div>
+                <div class="col-md-6 boxMapModal">
+                    <div class="form-group modalDetail__box">
+                        <label for="recipient-name" class="col-form-label modalDetail__label">Magnitud</label>
+                        <h4 class="modalDetail__name">7.5 escala de Ritcher</h4>
+                    </div>
+                    <div class="form-group modalDetail__box">
+                        <label for="recipient-name" class="col-form-label modalDetail__label">Categoría Sismo</label>
+                        <h4 class="modalDetail__name">FUERTE</h4>
+                    </div>
+                    <div class="form-group modalDetail__box">
+                        <label for="recipient-name" class="col-form-label modalDetail__label">Profundidad Sismo</label>
+                        <h4 class="modalDetail__name">150 kilómetros</h4>
+                    </div>
+<!--                    <div class="boxMapModal__map" id="map"></div>-->
+<!--                    <img style="" class="boxMapModal__map" src="http://maps.googleapis.com/maps/api/staticmap?center=10,-73&zoom=0&size=360x230&sensor=false&markers=icon:http://ds.iris.edu/static/wilber/images/map/marker-red-9.0.png|shadow:false|-16.303,-73.561" alt=""/>-->
+                </div>
+            </div>
+            <div class="modal-footer col-md-12">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 
 <!--   Core JS Files   -->
@@ -415,7 +468,6 @@
 <script src="{{url('/')}}/assets/js/bootstrap-notify.js"></script>
 
 <!--  Google Maps Plugin    -->
-<!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>-->
 
 <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
 <script src="{{url('/')}}/assets/js/light-bootstrap-dashboard.js"></script>
