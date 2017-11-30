@@ -1,19 +1,18 @@
-
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <link rel="icon" type="image/png" href="{{url('/')}}/assets/img/favicon.ico">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
     <title>INFO | TERREMOTOS</title>
 
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-    <meta name="viewport" content="width=device-width" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
+    <meta name="viewport" content="width=device-width"/>
 
 
     <!-- Bootstrap core CSS     -->
-    <link href="{{url('/')}}/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="{{url('/')}}/assets/css/bootstrap.min.css" rel="stylesheet"/>
 
     <!-- Animation library for notifications   -->
     <link href="{{url('/')}}/assets/css/animate.min.css" rel="stylesheet"/>
@@ -23,14 +22,14 @@
 
 
     <!--  CSS for Demo Purpose, don't include it in your project     -->
-    <link href="{{url('/')}}/assets/css/demo.css" rel="stylesheet" />
-    <link href="{{url('/')}}/assets/css/proyecto.css" rel="stylesheet" />
+    <link href="{{url('/')}}/assets/css/demo.css" rel="stylesheet"/>
+    <link href="{{url('/')}}/assets/css/proyecto.css" rel="stylesheet"/>
 
 
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
-    <link href="{{url('/')}}/assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+    <link href="{{url('/')}}/assets/css/pe-icon-7-stroke.css" rel="stylesheet"/>
     <style>
         .loader {
             border: 16px solid #f3f3f3;
@@ -44,13 +43,21 @@
         }
 
         @-webkit-keyframes spin {
-            0% { -webkit-transform: rotate(0deg); }
-            100% { -webkit-transform: rotate(360deg); }
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
         }
 
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
         }
     </style>
 
@@ -75,48 +82,52 @@
         </div>
 
         <ul class="nav">
-            <li  class="{{ Request::is('/') ? 'active' : '' }}">
+            <li class="{{ Request::is('/') ? 'active' : '' }}">
                 <a href="/">
                     <i class="pe-7s-graph"></i>
+
                     <p>Dashboard</p>
                 </a>
             </li>
-            <li  class="{{ Request::is('mapa/paises') ? 'active' : '' }}">
+            <li class="{{ Request::is('mapa/paises') ? 'active' : '' }}">
                 <a href="{{ url('/mapa/paises') }}">
                     <i class="pe-7s-map-marker"></i>
+
                     <p>Mapa Sudamérica</p>
                 </a>
             </li>
-            <li  class="{{ Request::is('resumen/paises') ? 'active' : '' }}">
+            <li class="{{ Request::is('resumen/paises') ? 'active' : '' }}">
                 <a href="{{ url('/resumen/paises') }}">
                     <i class="pe-7s-note2"></i>
+
                     <p>Resumen por países</p>
                 </a>
             </li>
             <li class="{{ Request::is('resumen/meses') ? 'active' : '' }}">
                 <a href="{{ url('/resumen/meses') }}">
                     <i class="pe-7s-news-paper"></i>
+
                     <p>Registro mensual</p>
                 </a>
             </li>
-<!--            <li>-->
-<!--                <a href="">-->
-<!--                    <i class="pe-7s-science"></i>-->
-<!--                    <p>Icons</p>-->
-<!--                </a>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href="">-->
-<!--                    <i class="pe-7s-bell"></i>-->
-<!--                    <p>Notifications</p>-->
-<!--                </a>-->
-<!--            </li>-->
-<!--            <li class="active-pro">-->
-<!--                <a href="upgrade.html">-->
-<!--                    <i class="pe-7s-rocket"></i>-->
-<!--                    <p>Upgrade to PRO</p>-->
-<!--                </a>-->
-<!--            </li>-->
+            <!--            <li>-->
+            <!--                <a href="">-->
+            <!--                    <i class="pe-7s-science"></i>-->
+            <!--                    <p>Icons</p>-->
+            <!--                </a>-->
+            <!--            </li>-->
+            <!--            <li>-->
+            <!--                <a href="">-->
+            <!--                    <i class="pe-7s-bell"></i>-->
+            <!--                    <p>Notifications</p>-->
+            <!--                </a>-->
+            <!--            </li>-->
+            <!--            <li class="active-pro">-->
+            <!--                <a href="upgrade.html">-->
+            <!--                    <i class="pe-7s-rocket"></i>-->
+            <!--                    <p>Upgrade to PRO</p>-->
+            <!--                </a>-->
+            <!--            </li>-->
         </ul>
     </div>
 </div>
@@ -194,204 +205,220 @@
 
 @section("content")
 <div class="content">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="header">
-                        <h4 class="title">Email Statistics</h4>
-                        <p class="category">Last Campaign Performance</p>
-                    </div>
-                    <div class="content">
-                        <div id="chartPreferences" class="ct-chart ct-perfect-fourth"></div>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="header">
+                <h4 class="title">Email Statistics</h4>
 
-                        <div class="footer">
-                            <div class="legend">
-                                <i class="fa fa-circle text-info"></i> Open
-                                <i class="fa fa-circle text-danger"></i> Bounce
-                                <i class="fa fa-circle text-warning"></i> Unsubscribe
-                            </div>
-                            <hr>
-                            <div class="stats">
-                                <i class="fa fa-clock-o"></i> Campaign sent 2 days ago
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <p class="category">Last Campaign Performance</p>
             </div>
+            <div class="content">
+                <div id="chartPreferences" class="ct-chart ct-perfect-fourth"></div>
 
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="header">
-                        <h4 class="title">Users Behavior</h4>
-                        <p class="category">24 Hours performance</p>
+                <div class="footer">
+                    <div class="legend">
+                        <i class="fa fa-circle text-info"></i> Open
+                        <i class="fa fa-circle text-danger"></i> Bounce
+                        <i class="fa fa-circle text-warning"></i> Unsubscribe
                     </div>
-                    <div class="content">
-                        <div id="chartHours" class="ct-chart"></div>
-                        <div class="footer">
-                            <div class="legend">
-                                <i class="fa fa-circle text-info"></i> Open
-                                <i class="fa fa-circle text-danger"></i> Click
-                                <i class="fa fa-circle text-warning"></i> Click Second Time
-                            </div>
-                            <hr>
-                            <div class="stats">
-                                <i class="fa fa-history"></i> Updated 3 minutes ago
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card ">
-                    <div class="header">
-                        <h4 class="title">2014 Sales</h4>
-                        <p class="category">All products including Taxes</p>
-                    </div>
-                    <div class="content">
-                        <div id="chartActivity" class="ct-chart"></div>
-
-                        <div class="footer">
-                            <div class="legend">
-                                <i class="fa fa-circle text-info"></i> Tesla Model S
-                                <i class="fa fa-circle text-danger"></i> BMW 5 Series
-                            </div>
-                            <hr>
-                            <div class="stats">
-                                <i class="fa fa-check"></i> Data information certified
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="card ">
-                    <div class="header">
-                        <h4 class="title">Tasks</h4>
-                        <p class="category">Backend development</p>
-                    </div>
-                    <div class="content">
-                        <div class="table-full-width">
-                            <table class="table">
-                                <tbody>
-                                <tr>
-                                    <td>
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="" data-toggle="checkbox">
-                                        </label>
-                                    </td>
-                                    <td>Sign contract for "What are conference organizers afraid of?"</td>
-                                    <td class="td-actions text-right">
-                                        <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </button>
-                                        <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                            <i class="fa fa-times"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="" data-toggle="checkbox" checked="">
-                                        </label>
-                                    </td>
-                                    <td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>
-                                    <td class="td-actions text-right">
-                                        <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </button>
-                                        <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                            <i class="fa fa-times"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="" data-toggle="checkbox" checked="">
-                                        </label>
-                                    </td>
-                                    <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
-                                    </td>
-                                    <td class="td-actions text-right">
-                                        <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </button>
-                                        <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                            <i class="fa fa-times"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="" data-toggle="checkbox">
-                                        </label>
-                                    </td>
-                                    <td>Create 4 Invisible User Experiences you Never Knew About</td>
-                                    <td class="td-actions text-right">
-                                        <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </button>
-                                        <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                            <i class="fa fa-times"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="" data-toggle="checkbox">
-                                        </label>
-                                    </td>
-                                    <td>Read "Following makes Medium better"</td>
-                                    <td class="td-actions text-right">
-                                        <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </button>
-                                        <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                            <i class="fa fa-times"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="" data-toggle="checkbox">
-                                        </label>
-                                    </td>
-                                    <td>Unfollow 5 enemies from twitter</td>
-                                    <td class="td-actions text-right">
-                                        <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </button>
-                                        <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                            <i class="fa fa-times"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <div class="footer">
-                            <hr>
-                            <div class="stats">
-                                <i class="fa fa-history"></i> Updated 3 minutes ago
-                            </div>
-                        </div>
+                    <hr>
+                    <div class="stats">
+                        <i class="fa fa-clock-o"></i> Campaign sent 2 days ago
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="col-md-8">
+        <div class="card">
+            <div class="header">
+                <h4 class="title">Users Behavior</h4>
+
+                <p class="category">24 Hours performance</p>
+            </div>
+            <div class="content">
+                <div id="chartHours" class="ct-chart"></div>
+                <div class="footer">
+                    <div class="legend">
+                        <i class="fa fa-circle text-info"></i> Open
+                        <i class="fa fa-circle text-danger"></i> Click
+                        <i class="fa fa-circle text-warning"></i> Click Second Time
+                    </div>
+                    <hr>
+                    <div class="stats">
+                        <i class="fa fa-history"></i> Updated 3 minutes ago
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card ">
+            <div class="header">
+                <h4 class="title">2014 Sales</h4>
+
+                <p class="category">All products including Taxes</p>
+            </div>
+            <div class="content">
+                <div id="chartActivity" class="ct-chart"></div>
+
+                <div class="footer">
+                    <div class="legend">
+                        <i class="fa fa-circle text-info"></i> Tesla Model S
+                        <i class="fa fa-circle text-danger"></i> BMW 5 Series
+                    </div>
+                    <hr>
+                    <div class="stats">
+                        <i class="fa fa-check"></i> Data information certified
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card ">
+            <div class="header">
+                <h4 class="title">Tasks</h4>
+
+                <p class="category">Backend development</p>
+            </div>
+            <div class="content">
+                <div class="table-full-width">
+                    <table class="table">
+                        <tbody>
+                        <tr>
+                            <td>
+                                <label class="checkbox">
+                                    <input type="checkbox" value="" data-toggle="checkbox">
+                                </label>
+                            </td>
+                            <td>Sign contract for "What are conference organizers afraid of?"</td>
+                            <td class="td-actions text-right">
+                                <button type="button" rel="tooltip" title="Edit Task"
+                                        class="btn btn-info btn-simple btn-xs">
+                                    <i class="fa fa-edit"></i>
+                                </button>
+                                <button type="button" rel="tooltip" title="Remove"
+                                        class="btn btn-danger btn-simple btn-xs">
+                                    <i class="fa fa-times"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="checkbox">
+                                    <input type="checkbox" value="" data-toggle="checkbox" checked="">
+                                </label>
+                            </td>
+                            <td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>
+                            <td class="td-actions text-right">
+                                <button type="button" rel="tooltip" title="Edit Task"
+                                        class="btn btn-info btn-simple btn-xs">
+                                    <i class="fa fa-edit"></i>
+                                </button>
+                                <button type="button" rel="tooltip" title="Remove"
+                                        class="btn btn-danger btn-simple btn-xs">
+                                    <i class="fa fa-times"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="checkbox">
+                                    <input type="checkbox" value="" data-toggle="checkbox" checked="">
+                                </label>
+                            </td>
+                            <td>Flooded: One year later, assessing what was lost and what was found when a
+                                ravaging rain swept through metro Detroit
+                            </td>
+                            <td class="td-actions text-right">
+                                <button type="button" rel="tooltip" title="Edit Task"
+                                        class="btn btn-info btn-simple btn-xs">
+                                    <i class="fa fa-edit"></i>
+                                </button>
+                                <button type="button" rel="tooltip" title="Remove"
+                                        class="btn btn-danger btn-simple btn-xs">
+                                    <i class="fa fa-times"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="checkbox">
+                                    <input type="checkbox" value="" data-toggle="checkbox">
+                                </label>
+                            </td>
+                            <td>Create 4 Invisible User Experiences you Never Knew About</td>
+                            <td class="td-actions text-right">
+                                <button type="button" rel="tooltip" title="Edit Task"
+                                        class="btn btn-info btn-simple btn-xs">
+                                    <i class="fa fa-edit"></i>
+                                </button>
+                                <button type="button" rel="tooltip" title="Remove"
+                                        class="btn btn-danger btn-simple btn-xs">
+                                    <i class="fa fa-times"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="checkbox">
+                                    <input type="checkbox" value="" data-toggle="checkbox">
+                                </label>
+                            </td>
+                            <td>Read "Following makes Medium better"</td>
+                            <td class="td-actions text-right">
+                                <button type="button" rel="tooltip" title="Edit Task"
+                                        class="btn btn-info btn-simple btn-xs">
+                                    <i class="fa fa-edit"></i>
+                                </button>
+                                <button type="button" rel="tooltip" title="Remove"
+                                        class="btn btn-danger btn-simple btn-xs">
+                                    <i class="fa fa-times"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="checkbox">
+                                    <input type="checkbox" value="" data-toggle="checkbox">
+                                </label>
+                            </td>
+                            <td>Unfollow 5 enemies from twitter</td>
+                            <td class="td-actions text-right">
+                                <button type="button" rel="tooltip" title="Edit Task"
+                                        class="btn btn-info btn-simple btn-xs">
+                                    <i class="fa fa-edit"></i>
+                                </button>
+                                <button type="button" rel="tooltip" title="Remove"
+                                        class="btn btn-danger btn-simple btn-xs">
+                                    <i class="fa fa-times"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="footer">
+                    <hr>
+                    <div class="stats">
+                        <i class="fa fa-history"></i> Updated 3 minutes ago
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 </div>
 @show
 
@@ -399,55 +426,71 @@
 </div>
 </div>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="detalleSisModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content col-md-12" style="padding: 0rem">
-            <div class="modal-header">
+            <div class="modal-header text-center">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h5 class="modal-title" id="exampleModalLabel">Detalles del Sismo</h5>
             </div>
-            <div class="modal-body col-md-12" style="padding: 15px 0px">
-                <div class="col-md-6">
-                <form>
-                    <div class="form-group modalDetail__box">
-                        <label for="recipient-name" class="col-form-label modalDetail__label">País</label>
-                        <h4 class="modalDetail__name">PERÚ</h4>
-                    </div>
-                    <div class="form-group modalDetail__box">
-                        <label for="recipient-name" class="col-form-label modalDetail__label">Región del sismo</label>
-                        <h4 class="modalDetail__name">NEAR COAST OF NORTHERN CHILE</h4>
-                    </div>
-                    <div class="form-group modalDetail__box">
-                        <label for="recipient-name" class="col-form-label modalDetail__label">Punto de Ubicación</label>
-                        <h4 class="modalDetail__name">
-                            <span>LAT:</span><span id="det_lat" style="font-weight: bold">18.7</span>
-                            <span style="padding-left: 15px">LONG:</span><span id="det_lon" style="font-weight: bold">-72.7</span>
-                        </h4>
-                    </div>
-                    <div class="form-group modalDetail__box">
-                        <label for="recipient-name" class="col-form-label modalDetail__label">Fecha Sismo</label>
-                        <h4 class="modalDetail__name">jueves, septiembre 14, 2017 @ 07:07 PM</h4>
-                    </div>
-                </form>
+            <div class="modal-body col-md-12" id="LoadingDetalle" style="padding: 15px 0px">
+                <div class="col-md-12" id="loadingDetalle" style="position: inherit; top: 25%; left: 40%">
+                    <div class="loader"></div>
+                    <p style="font-weight: bold; padding-left: 20px; padding-top: 15px">Cargando...</p>
                 </div>
-                <div class="col-md-6 boxMapModal">
-                    <div class="form-group modalDetail__box">
-                        <label for="recipient-name" class="col-form-label modalDetail__label">Magnitud</label>
-                        <h4 class="modalDetail__name">7.5 escala de Ritcher</h4>
-                    </div>
-                    <div class="form-group modalDetail__box">
-                        <label for="recipient-name" class="col-form-label modalDetail__label">Categoría Sismo</label>
-                        <h4 class="modalDetail__name">FUERTE</h4>
-                    </div>
-                    <div class="form-group modalDetail__box">
-                        <label for="recipient-name" class="col-form-label modalDetail__label">Profundidad Sismo</label>
-                        <h4 class="modalDetail__name">150 kilómetros</h4>
-                    </div>
-<!--                    <div class="boxMapModal__map" id="map"></div>-->
-<!--                    <img style="" class="boxMapModal__map" src="http://maps.googleapis.com/maps/api/staticmap?center=10,-73&zoom=0&size=360x230&sensor=false&markers=icon:http://ds.iris.edu/static/wilber/images/map/marker-red-9.0.png|shadow:false|-16.303,-73.561" alt=""/>-->
+                <div id="errorDetalle" style="display:none; position: absolute; top: 30%; left: 40%"> Ha surgido un
+                    error.
                 </div>
-            </div>
-            <div class="modal-footer col-md-12">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <div id="contentDetalle" style="display: none">
+                    <div class="col-md-6">
+                        <form>
+                            <div class="form-group modalDetail__box">
+                                <label for="recipient-name" class="col-form-label modalDetail__label">País</label>
+                                <h4 id="sis_pais" class="modalDetail__name">PERÚ</h4>
+                            </div>
+                            <div class="form-group modalDetail__box">
+                                <label for="recipient-name" class="col-form-label modalDetail__label">Región del
+                                    sismo</label>
+                                <h4 id="sis_region" class="modalDetail__name">NEAR COAST OF NORTHERN CHILE</h4>
+                            </div>
+                            <div class="form-group modalDetail__box">
+                                <label for="recipient-name" class="col-form-label modalDetail__label">Punto de
+                                    Ubicación</label>
+                                <h4 class="modalDetail__name">
+                                    <span>LAT:</span><span id="sis_lat" style="font-weight: bold">18.7</span>
+                                    <span style="padding-left: 15px">LONG:</span><span id="sis_lon"
+                                                                                       style="font-weight: bold">-72.7</span>
+                                </h4>
+                            </div>
+                            <div class="form-group modalDetail__box">
+                                <label for="recipient-name" class="col-form-label modalDetail__label">Fecha
+                                    Sismo</label>
+                                <h4 id="sis_fecha" class="modalDetail__name">jueves, septiembre 14, 2017 @ 07:07 PM</h4>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6 boxMapModal">
+                        <div class="form-group modalDetail__box">
+                            <label for="recipient-name" class="col-form-label modalDetail__label">Magnitud</label>
+                            <h4 id="sis_fecha" class="modalDetail__name">7.5 escala de Ritcher</h4>
+                        </div>
+                        <div class="form-group modalDetail__box">
+                            <label for="recipient-name" class="col-form-label modalDetail__label">Categoría
+                                Sismo</label>
+                            <h4 id="sis_cat" class="modalDetail__name">FUERTE</h4>
+                        </div>
+                        <div class="form-group modalDetail__box">
+                            <label for="recipient-name" class="col-form-label modalDetail__label">Profundidad
+                                Sismo</label>
+                            <h4 class="modalDetail__name"><span id="sis_profun" style="font-weight: bold">150</span>
+                                kilómetros</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="boxMapModal__map" id="map"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -477,7 +520,6 @@
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/highcharts-more.js"></script>
 <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
-
 
 
 @section("js")

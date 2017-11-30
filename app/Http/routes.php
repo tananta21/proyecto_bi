@@ -21,9 +21,6 @@ Route::get('/resumen/meses', function () {
     return view('resumen_meses');
 });
 
-Route::get('/mapa/paises', function () {
-    return view('mapa_paises');
-});
 
 
 //api
@@ -31,21 +28,37 @@ Route::get('/api/resumen/meses/',[
         'as'=> 'resumen.meses',
         'uses'=>'DahsboardController@resumenMeses']
 );
+//================================================
+
 
 Route::get('/resumen/paises', function () {
     return view('resumen_paises');
 });
+
 //api
 Route::get('/api/resumen/paises/',[
         'as'=> 'resumen.paises',
         'uses'=>'DahsboardController@resumenPaises']
 );
+//================================================
 
+Route::get('/mapa/paises', function () {
+    return view('mapa_paises');
+});
+//api
 Route::get('/api/mapa/paises/',[
         'as'=> 'mapa.paises',
         'uses'=>'DahsboardController@mapaPaises']
 );
+Route::get('/api/mapa/detalle_sismo/',[
+        'as'=> 'detalle.sismo',
+        'uses'=>'DahsboardController@detalleSismo']
+);
 
+
+
+
+//================================================
 
 
 

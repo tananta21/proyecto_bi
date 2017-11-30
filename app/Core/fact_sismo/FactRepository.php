@@ -40,11 +40,12 @@ WHEN MONTH(fact_sismos.fecha_sismo) = 12 THEN "diciembre" END as mes,
 FROM
 	fact_sismos
 WHERE
-		fact_sismos.pais_id = '.$pais_id.'
+		fact_sismos.pais_id = ' . $pais_id . '
 GROUP BY MONTH(fact_sismos.fecha_sismo)');
     }
 
-    public function resumenPaises(){
+    public function resumenPaises()
+    {
         return $registro = \DB::select('SELECT
 	dim_paises.code,
 	count(*) as num_sismos
@@ -56,29 +57,45 @@ WHERE
 AND 10.5
 GROUP BY dim_paises.code');
     }
-    public function mapaPaises(){
+
+    public function mapaPaises()
+    {
         return $registro = \DB::select('SELECT * FROM fact_sismos
         ');
     }
-    public function mapaPaisesDetail($pais_id){
+
+    public function mapaPaisesDetail($pais_id)
+    {
         return $registro = \DB::select('SELECT * FROM fact_sismos
-        WHERE pais_id ='.$pais_id.'');
+        WHERE pais_id =' . $pais_id . '');
     }
 
-    public function mapaPaisesIntens($inten_id){
+    public function mapaPaisesIntens($inten_id)
+    {
         return $registro = \DB::select('SELECT * FROM fact_sismos
-        WHERE intensidad_id ='.$inten_id.'');
+        WHERE intensidad_id =' . $inten_id . '');
     }
-    public function mapaPaisesIntensDetail($pais_id,$inten_id){
+
+    public function mapaPaisesIntensDetail($pais_id, $inten_id)
+    {
         return $registro = \DB::select('SELECT * FROM fact_sismos
-        WHERE pais_id ='.$pais_id.'
-        AND intensidad_id ='.$inten_id.'
+        WHERE pais_id =' . $pais_id . '
+        AND intensidad_id =' . $inten_id . '
         ');
     }
 
-
-
-
+    public function detalleSismo($sismo_id)
+    {
+        return $registro = \DB::select('SELECT
+                                *
+                            FROM
+                                fact_sismos
+                            INNER JOIN dim_paises
+                            ON fact_sismos.pais_id = dim_paises.id
+                            WHERE
+                        	fact_sismos.id = ' . $sismo_id . '
+        ');
+    }
 
 
     public function all()

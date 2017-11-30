@@ -8,8 +8,8 @@
         <label style="padding-top: 10px; padding-left: 0rem; padding-right: 0rem" for="selectPais" class="col-sm-2 control-label">Seleccione una región</label>
         <div class="col-sm-2" style="padding-left: 0rem">
             <select class="form-control" id="selectPais">
-                <option value="15" selected>SUDAMÉRICA</option>
-                <option value="1">PERÚ</option>
+                <option value="15">SUDAMÉRICA</option>
+                <option value="1" selected>PERÚ</option>
                 <option value="2">BRAZIL</option>
                 <option value="3">BOLIVIA</option>
                 <option value="4">ECUADOR</option>
@@ -113,7 +113,7 @@
                                 '<h3><strong>'+datos[0][i].region+'</strong></h3>'+
                                 '<p>Magnitud Sismo:<span style="padding-left: 10px"><strong>'+(datos[0][i].mag)+' escala de Richter</strong></span></p>' +
                                 '<p>Profundidad:<span style="padding-left: 10px"><strong>'+(datos[0][i].profundidad)+' kilómetros</strong></span></p>' +
-                                '<p><a data-toggle="modal" data-target="#exampleModal">Ver más..</a></p>' +
+                                '<p><a style="cursor: pointer" data-toggle="modal" data-target="#detalleSisModal"  data-sismo-id="'+datos[0][i].id+'">Ver más..</a></p>' +
                                 '</div>');
                         meses.push((datos[0][i].inten_color));
                     }
@@ -121,6 +121,8 @@
                     meses=[]
                     cont = cont+1;
                 }
+                console.log(datos)
+//                console.log(contenedor)
                 $("#numRegistros").text(contenedor.length+' Sismos')
                 if(contenedor.length !=0){
                 var map;
@@ -192,6 +194,77 @@
     google.maps.event.addDomListener(window, 'load', initMap);
 
 </script>
+<script type="text/javascript">
+    var detalle_sismo = $("#detalleSisModal");
+    detalle_sismo.on('shown.bs.modal', function (e) {
+        var sismo_id = $(e.relatedTarget).data('sismo-id');
+        var url = '{{route("detalle.sismo")}}';
+        var load = $("#loadingDetalle");
+        var error = $("#errorDetalle");
+        var content = $("#contentDetalle");
+        $.ajax({
+            type: 'GET',
+            url: url,
+            data: {
+                sismo_id: sismo_id
+            },
+            dataType: 'JSON',
+            beforeSend: function () {
+                load.css("display","block");
+            },
+            error: function () {
+                load.css("display","none");
+                error.css("display","block");
+            },
+            success: function (datos) {
+                load.css("display","none");
+                content.css("display","block");
+
+                $("#sis_pais").text(datos[0][0].nombre);
+                $("#sis_region").text(datos[0][0].region);
+                $("#sis_lat").text(datos[0][0].lat);
+                $("#sis_lon").text(datos[0][0].lon);
+                $("#sis_mag").text(datos[0][0].mag);
+                $("#sis_fecha").text(datos[0][0].fecha_sismo);
+                $("#sis_cat").text(datos[0][0].inten_name);
+                $("#sis_profun").text(datos[0][0].profundidad);
+
+                var lat= $("#sis_lat").text();
+                var lon= $("#sis_lon").text();
+
+                window.onload = initMap(parseFloat(lat),parseFloat(lon));
+                function initMap(lat,lon) {
+                    var myLatLng = {lat: lat, lng: lon};
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 7,
+                        center: myLatLng,
+                        mapTypeId: 'satellite'
+                    });
+                    map.setMapTypeId('terrain');
+
+                    var marker = new google.maps.Marker({
+                        position: myLatLng,
+                        map: map,
+                        title: 'Epicentro del sismo!'
+                    });
+                }
+
+
+
+
+
+            }
+
+        });
+
+
+    });
+    detalle_sismo.on('hidden.bs.modal', function () {
+        $("#contentDetalle").css("display","none");
+    })
+
+</script>
+
 <!--<script type="text/javascript">-->
 <!---->
 <!--    function initMap() {-->

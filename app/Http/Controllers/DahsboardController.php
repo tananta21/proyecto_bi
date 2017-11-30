@@ -72,6 +72,17 @@ class DahsboardController extends Controller
         }
     }
 
+    public function detalleSismo(){
+        $sismo_id = Input::get('sismo_id');
+        $query = $this->repoFactSismo->detalleSismo($sismo_id);
+        $datos = array($query);
+        if (empty($datos)) {
+            return 0;
+        } else {
+            return response()->json($datos);
+        }
+    }
+
 
     /**
      * Show the form for creating a new resource.

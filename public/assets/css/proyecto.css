@@ -1,9 +1,9 @@
 .boxMapModal {
   margin-top: 10px;
-/*height 130px*/
 }
 .boxMapModal__map {
-  width: 100%;
+  height: 280px !important;
+  width: 100% !important;
 }
 .mapaContainer {
   width: 100%;
@@ -55,9 +55,17 @@
   margin-bottom: 5px;
 }
 .modalDetail__label {
+  font-size: 16px;
   margin-bottom: 0rem;
+  text-decoration: underline blink;
 }
 .modalDetail__name {
-  font-size: 13px;
+  font-size: 15px;
   margin: 0rem;
+}
+#exampleModalLabel {
+  color: #808080;
+  font-weight: bold;
+  font-size: 17px;
+  opacity: 0.8px;
 }

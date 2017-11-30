@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac2eebc2-1d31-4616-8cd5-003f37b682d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/mapa_paises.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/css/proyecto.styl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/DahsboardController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/DahsboardController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Core/fact_sismo/FactRepository.php" afterPath="$PROJECT_DIR$/app/Core/fact_sismo/FactRepository.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/mapa.blade.php" afterPath="$PROJECT_DIR$/resources/views/mapa.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/resumen_paises.blade.php" afterPath="$PROJECT_DIR$/resources/views/resumen_paises.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/mapa_paises.blade.php" afterPath="$PROJECT_DIR$/resources/views/mapa_paises.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/proyecto.css" afterPath="$PROJECT_DIR$/public/assets/css/proyecto.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/proyecto.styl" afterPath="$PROJECT_DIR$/public/assets/css/proyecto.styl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -33,7 +31,59 @@
     <favorites_list name="proyecto_bi" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="index.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="493" column="18" selection-start="21729" selection-end="21729" vertical-scroll-proportion="-13.115385" vertical-offset="9519" max-vertical-offset="10680">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#h4#0;n#div#2;n#form#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#2;n#h4#0;n#div#2;n#form#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#3;n#h4#0;n#div#2;n#form#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#h4#0;n#div#2;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mapa_paises.blade.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/mapa_paises.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="247" column="53" selection-start="10806" selection-end="10806" vertical-scroll-proportion="0.708561" vertical-offset="2431" max-vertical-offset="3700">
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#hr#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#hr#0;n#div#1;n#div#3;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#hr#0;n#div#2;n#div#3;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#hr#0;n#div#3;n#div#3;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#hr#0;n#div#4;n#div#3;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#hr#0;n#div#5;n#div#3;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#hr#0;n#div#6;n#div#3;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#hr#0;n#div#7;n#div#3;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#3690#8597#0" expanded="false" />
+                <marker date="1512028445346" expanded="false" signature="4064:4103" placeholder="..." />
+                <marker date="1512028445346" expanded="false" signature="4143:4199" placeholder="..." />
+                <marker date="1512028445346" expanded="false" signature="4324:4363" placeholder="..." />
+                <marker date="1512028445346" expanded="false" signature="5132:5150" placeholder="..." />
+                <marker date="1512028445346" expanded="false" signature="5284:5302" placeholder="..." />
+                <marker date="1512028445346" expanded="false" signature="5422:5437" placeholder="..." />
+                <marker date="1512028445346" expanded="false" signature="8413:8452" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -50,14 +100,14 @@
         <option value="$PROJECT_DIR$/app/Exceptions/Handler.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/resources/views/mapa.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/resumen_paises.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/resumen_meses.blade.php" />
-        <option value="$PROJECT_DIR$/app/Core/fact_sismo/FactRepository.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/DahsboardController.php" />
-        <option value="$PROJECT_DIR$/resources/views/mapa_paises.blade.php" />
-        <option value="$PROJECT_DIR$/public/assets/css/proyecto.styl" />
+        <option value="$PROJECT_DIR$/app/Core/fact_sismo/FactRepository.php" />
         <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
+        <option value="$PROJECT_DIR$/public/assets/css/proyecto.styl" />
+        <option value="$PROJECT_DIR$/resources/views/mapa_paises.blade.php" />
       </list>
     </option>
   </component>
@@ -65,7 +115,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="width" value="1378" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -94,6 +144,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -144,117 +195,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proyecto_bi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proyecto_bi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proyecto_bi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proyecto_bi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proyecto_bi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proyecto_bi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proyecto_bi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proyecto_bi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proyecto_bi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proyecto_bi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proyecto_bi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proyecto_bi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -300,15 +242,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27567977" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28030303" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -316,11 +258,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -344,8 +286,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="59" column="31" selection-start="1644" selection-end="1644" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2980">
           <folding>
-            <marker date="1511843540337" expanded="true" signature="-1:-1" placeholder="SELECT dim_p..fact_sismos..." />
-            <marker date="1511843540337" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..fact_sismos..." />
+            <marker date="1512023975923" expanded="true" signature="-1:-1" placeholder="SELECT dim_p..fact_sismos..." />
+            <marker date="1512023975923" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..fact_sismos..." />
           </folding>
         </state>
       </provider>
@@ -367,12 +309,14 @@
             <element signature="n#style#0;n#hr#0;n#div#5;n#div#3;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#hr#0;n#div#6;n#div#3;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#hr#0;n#div#7;n#div#3;n#div#0;n#!!top" expanded="true" />
-            <marker date="1511849889984" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1511849889984" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1511849889984" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1511849889984" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1511849889984" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1511849889984" expanded="true" signature="-1:-1" placeholder="..." />
+            <element signature="e#3690#8597#0" expanded="false" />
+            <marker date="1512028445346" expanded="false" signature="4064:4103" placeholder="..." />
+            <marker date="1512028445346" expanded="false" signature="4143:4199" placeholder="..." />
+            <marker date="1512028445346" expanded="false" signature="4324:4363" placeholder="..." />
+            <marker date="1512028445346" expanded="false" signature="5132:5150" placeholder="..." />
+            <marker date="1512028445346" expanded="false" signature="5284:5302" placeholder="..." />
+            <marker date="1512028445346" expanded="false" signature="5422:5437" placeholder="..." />
+            <marker date="1512028445346" expanded="false" signature="8413:8452" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -522,64 +466,74 @@
         <state line="75" column="30" selection-start="2727" selection-end="2727" vertical-scroll-proportion="2.7322404" vertical-offset="0" max-vertical-offset="1920" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="31" selection-start="611" selection-end="611" vertical-scroll-proportion="-11.538462" vertical-offset="0" max-vertical-offset="1140" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/resumen_meses.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="79" selection-start="2357" selection-end="2371" vertical-scroll-proportion="-10.346154" vertical-offset="971" max-vertical-offset="2240">
-          <folding>
-            <marker date="1511840076479" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1511840076479" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1511840076479" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Core/fact_sismo/FactRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="33" selection-start="2187" selection-end="2187" vertical-scroll-proportion="2.4199288" vertical-offset="0" max-vertical-offset="3260">
+        <state line="88" column="40" selection-start="2389" selection-end="2699" vertical-scroll-proportion="0.63345194" vertical-offset="1304" max-vertical-offset="3600">
           <folding>
-            <marker date="1511843540337" expanded="true" signature="-1:-1" placeholder="SELECT dim_p..fact_sismos..." />
-            <marker date="1511843540337" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..fact_sismos..." />
+            <marker date="1512023975923" expanded="true" signature="-1:-1" placeholder="SELECT dim_p..fact_sismos..." />
+            <marker date="1512023975923" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..fact_sismos..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DahsboardController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="13" selection-start="1606" selection-end="1606" vertical-scroll-proportion="-49.23077" vertical-offset="0" max-vertical-offset="2960">
+        <state line="70" column="44" selection-start="1761" selection-end="1761" vertical-scroll-proportion="0.14234875" vertical-offset="1320" max-vertical-offset="3180">
           <folding>
             <element signature="e#41#80#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="16" selection-start="1244" selection-end="1257" vertical-scroll-proportion="0.49822065" vertical-offset="600" max-vertical-offset="1400">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/jquery-1.10.2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="4" selection-start="1584" selection-end="1626" vertical-scroll-proportion="0.3321739" vertical-offset="769" max-vertical-offset="195640">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/resumen_meses.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="4" selection-start="875" selection-end="960" vertical-scroll-proportion="-0.9471767" vertical-offset="960" max-vertical-offset="2240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/css/proyecto.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1240">
+        <state line="3" column="13" selection-start="53" selection-end="53" vertical-scroll-proportion="0.10204082" vertical-offset="0" max-vertical-offset="1360">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="426" column="105" selection-start="19840" selection-end="19840" vertical-scroll-proportion="0.78142077" vertical-offset="8091" max-vertical-offset="9840">
+        <state line="493" column="18" selection-start="21729" selection-end="21729" vertical-scroll-proportion="-13.115385" vertical-offset="9519" max-vertical-offset="10680">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#h4#0;n#div#2;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#2;n#h4#0;n#div#2;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#3;n#h4#0;n#div#2;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#h4#0;n#div#2;n#form#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#2;n#h4#0;n#div#2;n#form#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#3;n#h4#0;n#div#2;n#form#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#h4#0;n#div#2;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/mapa_paises.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="52" selection-start="1768" selection-end="1768" vertical-scroll-proportion="-0.0" vertical-offset="660" max-vertical-offset="4360">
+        <state line="247" column="53" selection-start="10806" selection-end="10806" vertical-scroll-proportion="0.708561" vertical-offset="2431" max-vertical-offset="3700">
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#0;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -594,12 +548,14 @@
             <element signature="n#style#0;n#hr#0;n#div#5;n#div#3;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#hr#0;n#div#6;n#div#3;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#hr#0;n#div#7;n#div#3;n#div#0;n#!!top" expanded="true" />
-            <marker date="1511849889984" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1511849889984" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1511849889984" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1511849889984" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1511849889984" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1511849889984" expanded="true" signature="-1:-1" placeholder="..." />
+            <element signature="e#3690#8597#0" expanded="false" />
+            <marker date="1512028445346" expanded="false" signature="4064:4103" placeholder="..." />
+            <marker date="1512028445346" expanded="false" signature="4143:4199" placeholder="..." />
+            <marker date="1512028445346" expanded="false" signature="4324:4363" placeholder="..." />
+            <marker date="1512028445346" expanded="false" signature="5132:5150" placeholder="..." />
+            <marker date="1512028445346" expanded="false" signature="5284:5302" placeholder="..." />
+            <marker date="1512028445346" expanded="false" signature="5422:5437" placeholder="..." />
+            <marker date="1512028445346" expanded="false" signature="8413:8452" placeholder="..." />
           </folding>
         </state>
       </provider>
