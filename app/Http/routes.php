@@ -21,7 +21,12 @@ Route::get('/resumen/meses', function () {
     return view('resumen_meses');
 });
 
+//api general
 
+Route::get('/api/cantidad/sismos/',[
+        'as'=> 'cantidad.sismos',
+        'uses'=>'DahsboardController@cantidadSismos']
+);
 
 //api
 Route::get('/api/resumen/meses/',[
@@ -31,14 +36,14 @@ Route::get('/api/resumen/meses/',[
 //================================================
 
 
-Route::get('/resumen/paises', function () {
-    return view('resumen_paises');
+Route::get('/sismos/fuertes', function () {
+    return view('sismos_fuertes');
 });
 
 //api
-Route::get('/api/resumen/paises/',[
-        'as'=> 'resumen.paises',
-        'uses'=>'DahsboardController@resumenPaises']
+Route::get('/api/sismos/fuertes/',[
+        'as'=> 'sismos.fuertes',
+        'uses'=>'DahsboardController@sismosFuertes']
 );
 //================================================
 
@@ -58,14 +63,14 @@ Route::get('/api/mapa/detalle_sismo/',[
 
 //================================================
 
-Route::get('/categoria/sismos', function () {
-    return view('categoria_sismos');
+Route::get('/resumen/paises', function () {
+    return view('resumen_paises');
 });
 
 //api
-Route::get('/api/categoria/sismos/',[
-        'as'=> 'categoria.sismos',
-        'uses'=>'DahsboardController@categoriaSismos']
+Route::get('/api/resumen/paises/',[
+        'as'=> 'resumen.paises',
+        'uses'=>'DahsboardController@resumenPaises']
 );
 
 //================================================

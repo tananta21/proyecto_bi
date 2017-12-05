@@ -20,6 +20,11 @@ class FactRepository implements BaseRepositoryInterface
         $this->fact_sismo = new FactSismo();
     }
 
+    public function cantidadSismos($pais_id)
+    {
+        return $registro = \DB::select('SELECT COUNT(*) as cant FROM fact_sismos WHERE fact_sismos.pais_id =' . $pais_id . '');
+    }
+
     public function resumenMeses($pais_id)
     {
         return $registro = \DB::select('SELECT
@@ -44,7 +49,7 @@ WHERE
 GROUP BY MONTH(fact_sismos.fecha_sismo)');
     }
 
-    public function resumenPaises()
+    public function sismosFuertes()
     {
         return $registro = \DB::select('SELECT
 	dim_paises.code,
@@ -97,13 +102,24 @@ GROUP BY dim_paises.code');
         ');
     }
 
-    public function categoriaSismo($pais_id)
+    public function resumenPaisesPorcen($pais_id)
     {
         return $registro = \DB::select('SELECT
 	dim_intensidad.descripcion as name,
 ROUND((COALESCE(
 		(SELECT	COUNT(*)FROM fact_sismos WHERE fact_sismos.intensidad_id = dim_intensidad.id
 			AND pais_id =' . $pais_id . ' ),0)*100)/(SELECT COUNT(*) FROM fact_sismos WHERE fact_sismos.pais_id=' . $pais_id . '),1) as y,
+	dim_intensidad.descripcion as drilldown
+FROM
+	dim_intensidad');
+    }
+
+    public function resumenPaisesCantidad($pais_id)
+    {
+        return $registro = \DB::select('SELECT
+	dim_intensidad.descripcion as name,
+		(SELECT	COUNT(*)FROM fact_sismos WHERE fact_sismos.intensidad_id = dim_intensidad.id
+			AND pais_id = ' . $pais_id . ') as y,
 	dim_intensidad.descripcion as drilldown
 FROM
 	dim_intensidad');

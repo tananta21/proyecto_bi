@@ -21,6 +21,16 @@ class DahsboardController extends Controller
     {
         //
     }
+    public function cantidadSismos(){
+        $pais_id = Input::get('pais_id');
+        $query = $this->repoFactSismo->cantidadSismos($pais_id);
+        $datos = array($query);
+        if (empty($datos)) {
+            return 0;
+        } else {
+            return response()->json($datos);
+        }
+    }
 
     public function resumenMeses()
     {
@@ -34,9 +44,9 @@ class DahsboardController extends Controller
         }
     }
 
-    public function resumenPaises()
+    public function sismosFuertes()
     {
-        $query = $this->repoFactSismo->resumenPaises();
+        $query = $this->repoFactSismo->sismosFuertes();
         $datos = array($query);
         if (empty($datos)) {
             return 0;
@@ -83,10 +93,16 @@ class DahsboardController extends Controller
         }
     }
 
-    public function categoriaSismos()
+    public function resumenPaises()
     {
         $pais_id = Input::get('pais_id');
-        $query = $this->repoFactSismo->categoriaSismo($pais_id);
+        $tipo_graph = Input::get('tipo_graph');
+        if($tipo_graph==2){
+        $query = $this->repoFactSismo->resumenPaisesPorcen($pais_id);
+        }
+        else{
+            $query = $this->repoFactSismo->resumenPaisesCantidad($pais_id);
+        }
         $datos = array($query);
         if (empty($datos)) {
             return 0;

@@ -96,18 +96,17 @@
                     <p>Mapa Sismos</p>
                 </a>
             </li>
-            <li class="{{ Request::is('categoria/sismos') ? 'active' : '' }}">
-                <a href="{{ url('/categoria/sismos') }}">
-                    <i class="pe-7s-note2"></i>
-                    <p>Categoría Sismos</p>
-                </a>
-            </li>
-
             <li class="{{ Request::is('resumen/paises') ? 'active' : '' }}">
                 <a href="{{ url('/resumen/paises') }}">
                     <i class="pe-7s-note2"></i>
+                    <p>Resumen países</p>
+                </a>
+            </li>
 
-                    <p>Resumen por países</p>
+            <li class="{{ Request::is('sismos/fuertes') ? 'active' : '' }}">
+                <a href="{{ url('/sismos/fuertes') }}">
+                    <i class="pe-7s-note2"></i>
+                    <p>Sismos Fuertes</p>
                 </a>
             </li>
             <li class="">
@@ -120,7 +119,6 @@
             <li class="{{ Request::is('resumen/meses') ? 'active' : '' }}">
                 <a href="{{ url('/resumen/meses') }}">
                     <i class="pe-7s-news-paper"></i>
-
                     <p>Registro mensual</p>
                 </a>
             </li>
