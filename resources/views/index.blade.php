@@ -93,9 +93,16 @@
                 <a href="{{ url('/mapa/paises') }}">
                     <i class="pe-7s-map-marker"></i>
 
-                    <p>Mapa Sudamérica</p>
+                    <p>Mapa Sismos</p>
                 </a>
             </li>
+            <li class="{{ Request::is('categoria/sismos') ? 'active' : '' }}">
+                <a href="{{ url('/categoria/sismos') }}">
+                    <i class="pe-7s-note2"></i>
+                    <p>Categoría Sismos</p>
+                </a>
+            </li>
+
             <li class="{{ Request::is('resumen/paises') ? 'active' : '' }}">
                 <a href="{{ url('/resumen/paises') }}">
                     <i class="pe-7s-note2"></i>
@@ -103,6 +110,13 @@
                     <p>Resumen por países</p>
                 </a>
             </li>
+            <li class="">
+                <a href="">
+                    <i class="pe-7s-note2"></i>
+                    <p>Tendencia Anual</p>
+                </a>
+            </li>
+
             <li class="{{ Request::is('resumen/meses') ? 'active' : '' }}">
                 <a href="{{ url('/resumen/meses') }}">
                     <i class="pe-7s-news-paper"></i>

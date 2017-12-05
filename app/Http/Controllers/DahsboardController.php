@@ -83,6 +83,18 @@ class DahsboardController extends Controller
         }
     }
 
+    public function categoriaSismos()
+    {
+        $pais_id = Input::get('pais_id');
+        $query = $this->repoFactSismo->categoriaSismo($pais_id);
+        $datos = array($query);
+        if (empty($datos)) {
+            return 0;
+        } else {
+            return response()->json($datos);
+        }
+    }
+
 
     /**
      * Show the form for creating a new resource.

@@ -2,7 +2,9 @@
 @section('content')
 <div class="col-md-12 col-sm-12 col-xs-12">
     <div class="form-group" style="padding: 10px 10px; margin-bottom: 50px">
-        <label style="padding-top: 10px; padding-left: 0rem; padding-right: 0rem" for="selectPais" class="col-sm-2 control-label">Seleccione un país</label>
+        <label style="padding-top: 10px; padding-left: 0rem; padding-right: 0rem" for="selectPais"
+               class="col-sm-2 control-label">Seleccione un país</label>
+
         <div class="col-sm-4">
             <select class="form-control " id="selectPais">
                 <option value="1" selected>PERÚ</option>
@@ -20,14 +22,14 @@
 <script src="https://code.highcharts.com/modules/series-label.js"></script>
 <script>
 
-    $("#selectPais").on('change', function() {
+    $("#selectPais").on('change', function () {
         window.onload = peticion();
     })
 
     $(function () {
         window.onload = peticion();
     })
-    function peticion(){
+    function peticion() {
         var url = '{{route("resumen.meses")}}';
         $.ajax({
             type: 'GET',
@@ -36,7 +38,7 @@
                 pais_id: $("#selectPais").val()
             },
             dataType: 'JSON',
-            beforeSend: function() {
+            beforeSend: function () {
                 $("#container").html('<div style="position: absolute; top: 50%; left: 50%" "><div class="loader"></div><p style="font-weight: bold; text-align: center; padding-top: 15px">Cargando...</p></div>');
             },
             error: function () {
@@ -45,22 +47,22 @@
             success: function (data) {
                 var meses = new Array();
                 var num_sismos = new Array();
-                for(i=0;i<data[0].length; i++){
-                    meses.push((data[0][i].mes).substring(0,3));
+                for (i = 0; i < data[0].length; i++) {
+                    meses.push((data[0][i].mes).substring(0, 3));
                     num_sismos.push((data[0][i].num_sismos));
                 }
-                window.onload = graficar(meses,num_sismos) ;
+                window.onload = graficar(meses, num_sismos);
             }
         });
     }
 
-    function graficar(meses,num_sismos){
+    function graficar(meses, num_sismos) {
         Highcharts.chart('container', {
             chart: {
                 type: 'spline'
             },
             title: {
-                text: 'Número de sismos registrados al mes en '+ $("#selectPais option:selected").text()
+                text: 'Número de sismos registrados al mes en ' + $("#selectPais option:selected").text()
             },
             subtitle: {
                 text: 'Registros tomados desde el año 1970'
@@ -74,7 +76,7 @@
                 },
                 labels: {
                     formatter: function () {
-                        return this.value ;
+                        return this.value;
                     }
                 }
             },
@@ -91,14 +93,28 @@
                     }
                 }
             },
-            series: [{
-                name: 'N° Sismos',
-                marker: {
-                    symbol: 'square'
-                },
-                data:  num_sismos
+            series: [
+                {
+                    name: 'N° Sismos',
+                    marker: {
+                        symbol: 'square'
+                    },
+                    data: num_sismos
 
-            }]
+                },
+                {
+                    name: 'London',
+                    marker: {
+                        symbol: 'diamond'
+                    },
+                    data: [{
+                        y: 3.9,
+                        marker: {
+                            symbol: 'url(https://www.highcharts.com/samples/graphics/snow.png)'
+                        }
+                    }, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+                }
+            ]
         });
     }
 

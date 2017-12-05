@@ -97,6 +97,18 @@ GROUP BY dim_paises.code');
         ');
     }
 
+    public function categoriaSismo($pais_id)
+    {
+        return $registro = \DB::select('SELECT
+	dim_intensidad.descripcion as name,
+ROUND((COALESCE(
+		(SELECT	COUNT(*)FROM fact_sismos WHERE fact_sismos.intensidad_id = dim_intensidad.id
+			AND pais_id =' . $pais_id . ' ),0)*100)/(SELECT COUNT(*) FROM fact_sismos WHERE fact_sismos.pais_id=' . $pais_id . '),1) as y,
+	dim_intensidad.descripcion as drilldown
+FROM
+	dim_intensidad');
+    }
+
 
     public function all()
     {

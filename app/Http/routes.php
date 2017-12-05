@@ -56,12 +56,19 @@ Route::get('/api/mapa/detalle_sismo/',[
 );
 
 
-
-
 //================================================
 
+Route::get('/categoria/sismos', function () {
+    return view('categoria_sismos');
+});
 
+//api
+Route::get('/api/categoria/sismos/',[
+        'as'=> 'categoria.sismos',
+        'uses'=>'DahsboardController@categoriaSismos']
+);
 
+//================================================
 
 
 
