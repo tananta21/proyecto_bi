@@ -144,7 +144,7 @@
                             type: 'column'
                         },
                         title: {
-                            text: 'N° DE SISMOS REGISTRADOS POR CATEGORÍA EN'+ $("#selectPais option:selected").text()
+                            text: 'N° DE SISMOS REGISTRADOS POR CATEGORÍA EN ' + $("#selectPais option:selected").text()
                         },
                         xAxis: {
                             type: 'category'
@@ -173,7 +173,7 @@
                         },
 
                         series: [{
-                            name: 'Sismos',
+                            name: 'Categoría',
                             colorByPoint: true,
                             data: barras
                         }]
