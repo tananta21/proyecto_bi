@@ -125,6 +125,50 @@ FROM
 	dim_intensidad');
     }
 
+    public function resumenCategoriaPorcen($pais_id)
+    {
+        return $registro = \DB::select('SELECT
+                                        dim_paises.nombre as name,
+                                         ROUND((COALESCE(
+                                            (
+                                                SELECT
+                                                    COUNT(*)
+                                                FROM
+                                                    fact_sismos
+                                                WHERE
+                                                    fact_sismos.intensidad_id = ' . $pais_id . '
+                                                AND fact_sismos.pais_id = dim_paises.id
+                                            ),0)*100)/(SELECT COUNT(*) FROM fact_sismos WHERE fact_sismos.intensidad_id=' . $pais_id . '),2) as y,
+                                        dim_paises.nombre as drilldown
+                                    FROM
+                                        dim_paises
+                                    ORDER BY
+                                        dim_paises.id');
+    }
+    public function resumenCategoriaCantidad($pais_id)    {
+        return $registro = \DB::select('SELECT
+                                        dim_paises.nombre as name,
+                                        COALESCE (
+                                            (
+                                                SELECT
+                                                    COUNT(*)
+                                                FROM
+                                                    fact_sismos
+                                                WHERE
+                                                    fact_sismos.intensidad_id = ' . $pais_id . '
+                                                AND fact_sismos.pais_id = dim_paises.id
+                                            ),
+                                            0
+                                        ) as y,
+                                        dim_paises.nombre as drilldown
+                                    FROM
+                                        dim_paises
+                                    ORDER BY
+                                        dim_paises.id ');
+    }
+
+
+
 
     public function all()
     {

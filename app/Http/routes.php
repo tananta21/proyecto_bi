@@ -75,6 +75,19 @@ Route::get('/api/resumen/paises/',[
 
 //================================================
 
+//================================================
+
+Route::get('/categoria/sismos', function () {
+    return view('categoria_sismos');
+});
+
+//api
+Route::get('/api/categoria/sismos/',[
+        'as'=> 'categoria.sismos',
+        'uses'=>'DahsboardController@categoriaSismos']
+);
+//================================================
+
 
 
 

@@ -102,6 +102,13 @@
                     <p>Resumen países</p>
                 </a>
             </li>
+            <li class="{{ Request::is('categoria/sismos') ? 'active' : '' }}">
+                <a href="{{ url('/categoria/sismos') }}">
+                    <i class="pe-7s-news-paper"></i>
+                    <p>Resumen categorias</p>
+                </a>
+            </li>
+
 
             <li class="{{ Request::is('sismos/fuertes') ? 'active' : '' }}">
                 <a href="{{ url('/sismos/fuertes') }}">

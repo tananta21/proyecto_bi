@@ -111,6 +111,24 @@ class DahsboardController extends Controller
         }
     }
 
+    public function categoriaSismos()
+    {
+        $pais_id = Input::get('pais_id');
+        $tipo_graph = Input::get('tipo_graph');
+        if($tipo_graph==2){
+            $query = $this->repoFactSismo->resumenCategoriaPorcen($pais_id);
+        }
+        else{
+            $query = $this->repoFactSismo->resumenCategoriaCantidad($pais_id);
+        }
+        $datos = array($query);
+        if (empty($datos)) {
+            return 0;
+        } else {
+            return response()->json($datos);
+        }
+    }
+
 
     /**
      * Show the form for creating a new resource.
