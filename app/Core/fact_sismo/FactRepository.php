@@ -25,6 +25,13 @@ class FactRepository implements BaseRepositoryInterface
         return $registro = \DB::select('SELECT COUNT(*) as cant FROM fact_sismos WHERE fact_sismos.pais_id =' . $pais_id . '');
     }
 
+    public function cantidadSismosCategoria($pais_id)
+    {
+        return $registro = \DB::select('SELECT COUNT(*) as cant FROM fact_sismos WHERE fact_sismos.intensidad_id =' . $pais_id . '');
+    }
+
+
+
     public function resumenMeses($pais_id)
     {
         return $registro = \DB::select('SELECT

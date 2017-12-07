@@ -33,6 +33,18 @@ class DahsboardController extends Controller
             return response()->json($datos);
         }
     }
+    public function cantidadSismosCategoria()
+    {
+        $pais_id = Input::get('pais_id');
+        $query = $this->repoFactSismo->cantidadSismosCategoria($pais_id);
+        $datos = array($query);
+        if (empty($datos)) {
+            return 0;
+        } else {
+            return response()->json($datos);
+        }
+    }
+    
 
     public function resumenMeses()
     {

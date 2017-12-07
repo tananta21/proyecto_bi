@@ -43,7 +43,7 @@
 
     function cantidadSismos(){
         $("#numRegistros").text('Cargando...')
-        var url = '{{route("cantidad.sismos")}}';
+        var url = '{{route("cantidad.sismos_categoria")}}';
         $.ajax({
             type: 'GET',
             url: url,

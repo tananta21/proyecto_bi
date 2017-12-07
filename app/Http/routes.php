@@ -28,6 +28,13 @@ Route::get('/api/cantidad/sismos/',[
         'uses'=>'DahsboardController@cantidadSismos']
 );
 
+Route::get('/api/cantidad/sismos_categoria/',[
+        'as'=> 'cantidad.sismos_categoria',
+        'uses'=>'DahsboardController@cantidadSismosCategoria']
+);
+
+
+
 //api
 Route::get('/api/resumen/meses/',[
         'as'=> 'resumen.meses',
