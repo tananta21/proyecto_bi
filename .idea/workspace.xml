@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac2eebc2-1d31-4616-8cd5-003f37b682d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/historial_categorias.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/DahsboardController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/DahsboardController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Core/fact_sismo/FactRepository.php" afterPath="$PROJECT_DIR$/app/Core/fact_sismo/FactRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/categoria_sismos.blade.php" afterPath="$PROJECT_DIR$/resources/views/categoria_sismos.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/historial_categorias.blade.php" afterPath="$PROJECT_DIR$/resources/views/historial_categorias.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/resumen_meses.blade.php" afterPath="$PROJECT_DIR$/resources/views/resumen_meses.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/resumen_paises.blade.php" afterPath="$PROJECT_DIR$/resources/views/resumen_paises.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="proyecto_bi.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,48 +27,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
+      <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="130" column="54" selection-start="4604" selection-end="4604" vertical-scroll-proportion="-13.423077" vertical-offset="2251" max-vertical-offset="11140">
+            <state line="14" column="28" selection-start="452" selection-end="452" vertical-scroll-proportion="-3.8461537" vertical-offset="0" max-vertical-offset="2400">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="historial_categorias.blade.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/historial_categorias.blade.php">
+      <file leaf-file-name="index.blade.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="51" selection-start="2770" selection-end="2770" vertical-scroll-proportion="-0.04007286" vertical-offset="1322" max-vertical-offset="3940">
-              <folding>
-                <marker date="1512642874154" expanded="false" signature="1557:1596" placeholder="..." />
-                <marker date="1512642874154" expanded="false" signature="2280:2319" placeholder="..." />
-                <marker date="1512642874154" expanded="false" signature="2359:2415" placeholder="..." />
-                <marker date="1512642874154" expanded="false" signature="2619:2658" placeholder="..." />
-                <marker date="1512642874154" expanded="false" signature="6249:6288" placeholder="..." />
-                <marker date="1512642874154" expanded="false" signature="6328:6384" placeholder="..." />
-                <marker date="1512642874154" expanded="false" signature="6509:6548" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FactRepository.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Core/fact_sismo/FactRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="189" column="48" selection-start="6714" selection-end="6714" vertical-scroll-proportion="-41.53846" vertical-offset="1420" max-vertical-offset="4540">
-              <folding>
-                <element signature="e#2927#3367#0" expanded="false" />
-                <element signature="e#3373#3709#0" expanded="false" />
-                <element signature="e#3715#4877#0" expanded="false" />
-                <element signature="e#3797#4870#0" expanded="false" />
-                <element signature="e#4883#6035#0" expanded="false" />
-                <marker date="1512642819049" expanded="true" signature="1570:1764" placeholder="SELECT dim_p..fact_sismos..." />
-                <marker date="1512642819049" expanded="true" signature="1854:1879" placeholder="SELECT * FRO..fact_sismos..." />
-                <marker date="1512642819049" expanded="true" signature="6121:6162" placeholder="SELECT id,de..dim_intensidad..." />
-                <marker date="1512642819049" expanded="true" signature="6255:6354" placeholder="SELECT YEAR(..." />
-                <marker date="1512642819049" expanded="true" signature="6860:7157" placeholder="SELECT year(..." />
-              </folding>
+            <state line="92" column="34" selection-start="3051" selection-end="3051" vertical-scroll-proportion="0.45355192" vertical-offset="1591" max-vertical-offset="11120">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -102,11 +68,11 @@
         <option value="$PROJECT_DIR$/resources/views/resumen_paises.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/resumen_meses.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/DahsboardController.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/categoria_sismos.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Core/fact_sismo/FactRepository.php" />
         <option value="$PROJECT_DIR$/resources/views/historial_categorias.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
       </list>
     </option>
   </component>
@@ -203,7 +169,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="LayoutCode.rearrangeEntriesPHP" value="true" />
     <property name="FullScreen" value="false" />
-    <property name="SearchEverywhereHistory" value="&#10;da&#10;fac&#10;ro&#10;rou&#10;helpers.php" />
+    <property name="SearchEverywhereHistory" value="rou&#10;da&#10;fac&#10;ro&#10;helpers.php" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -291,13 +257,7 @@
     <entry file="file://$PROJECT_DIR$/resources/views/categoria_sismos.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="102" column="23" selection-start="3994" selection-end="4162" vertical-scroll-proportion="0.0" vertical-offset="1783" max-vertical-offset="3920">
-          <folding>
-            <marker date="1512632716215" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1512632716215" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1512632716215" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1512632716215" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1512632716215" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -324,13 +284,7 @@
     <entry file="file://$PROJECT_DIR$/resources/views/categoria_sismos.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="117" column="142" selection-start="4737" selection-end="4737" vertical-scroll-proportion="0.0" vertical-offset="2231" max-vertical-offset="3920">
-          <folding>
-            <marker date="1512632716215" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1512632716215" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1512632716215" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1512632716215" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1512632716215" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -542,26 +496,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/categoria_sismos.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="4" selection-start="2507" selection-end="2593" vertical-scroll-proportion="-9.346154" vertical-offset="1097" max-vertical-offset="3960">
-          <folding>
-            <marker date="1512632716215" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1512632716215" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1512632716215" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1512632716215" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1512632716215" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="31" selection-start="2554" selection-end="2554" vertical-scroll-proportion="0.42704627" vertical-offset="1720" max-vertical-offset="2400">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/resumen_meses.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="58" column="41" selection-start="2191" selection-end="2191" vertical-scroll-proportion="-0.09653916" vertical-offset="1213" max-vertical-offset="2320">
@@ -570,13 +504,6 @@
             <marker date="1512576607953" expanded="false" signature="-1:-1" placeholder="..." />
             <marker date="1512576607953" expanded="false" signature="-1:-1" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="54" selection-start="4604" selection-end="4604" vertical-scroll-proportion="-13.423077" vertical-offset="2251" max-vertical-offset="11140">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -589,27 +516,48 @@
             <element signature="e#3715#4877#0" expanded="false" />
             <element signature="e#3797#4870#0" expanded="false" />
             <element signature="e#4883#6035#0" expanded="false" />
-            <marker date="1512642819049" expanded="true" signature="1570:1764" placeholder="SELECT dim_p..fact_sismos..." />
-            <marker date="1512642819049" expanded="true" signature="1854:1879" placeholder="SELECT * FRO..fact_sismos..." />
-            <marker date="1512642819049" expanded="true" signature="6121:6162" placeholder="SELECT id,de..dim_intensidad..." />
-            <marker date="1512642819049" expanded="true" signature="6255:6354" placeholder="SELECT YEAR(..." />
-            <marker date="1512642819049" expanded="true" signature="6860:7157" placeholder="SELECT year(..." />
+            <marker date="1512642819049" expanded="true" signature="-1:-1" placeholder="SELECT dim_p..fact_sismos..." />
+            <marker date="1512642819049" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..fact_sismos..." />
+            <marker date="1512642819049" expanded="true" signature="-1:-1" placeholder="SELECT id,de..dim_intensidad..." />
+            <marker date="1512642819049" expanded="true" signature="-1:-1" placeholder="SELECT YEAR(..." />
+            <marker date="1512642819049" expanded="true" signature="-1:-1" placeholder="SELECT year(..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/categoria_sismos.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="113" selection-start="4669" selection-end="4708" vertical-scroll-proportion="0.40619308" vertical-offset="2117" max-vertical-offset="3960">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/historial_categorias.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="51" selection-start="2770" selection-end="2770" vertical-scroll-proportion="-0.04007286" vertical-offset="1322" max-vertical-offset="3940">
+        <state line="5" column="61" selection-start="309" selection-end="309" vertical-scroll-proportion="0.18214937" vertical-offset="0" max-vertical-offset="3940">
           <folding>
-            <marker date="1512642874154" expanded="false" signature="1557:1596" placeholder="..." />
-            <marker date="1512642874154" expanded="false" signature="2280:2319" placeholder="..." />
-            <marker date="1512642874154" expanded="false" signature="2359:2415" placeholder="..." />
-            <marker date="1512642874154" expanded="false" signature="2619:2658" placeholder="..." />
-            <marker date="1512642874154" expanded="false" signature="6249:6288" placeholder="..." />
-            <marker date="1512642874154" expanded="false" signature="6328:6384" placeholder="..." />
-            <marker date="1512642874154" expanded="false" signature="6509:6548" placeholder="..." />
+            <marker date="1512643284530" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1512643284530" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1512643284530" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1512643284530" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1512643284530" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1512643284530" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1512643284530" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="28" selection-start="452" selection-end="452" vertical-scroll-proportion="-3.8461537" vertical-offset="0" max-vertical-offset="2400">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="34" selection-start="3051" selection-end="3051" vertical-scroll-proportion="0.45355192" vertical-offset="1591" max-vertical-offset="11120">
+          <folding />
         </state>
       </provider>
     </entry>

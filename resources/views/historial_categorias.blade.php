@@ -3,7 +3,7 @@
 <div class="col-lg-12 col-md-12">
     <div class="form-group" style="padding: 10px 10px; margin-bottom: 10px">
         <label style="padding-top: 10px; padding-left: 0rem; padding-right: 0rem" for="selectPais"
-               class="col-sm-2 control-label">Seleccione categoría</label>
+               class="col-sm-2 control-label">Seleccione país</label>
 
         <div class="col-sm-2" style="padding-left: 0rem">
             <select class="form-control" id="selectPais">
@@ -116,11 +116,11 @@
         Highcharts.chart('container', {
 
             title: {
-                text: 'Solar Employment Growth by Sector, 2010-2016'
+                text: 'Registro de sismos por categoria desde el año 1970 en' + $("#selectPais option:selected").text()
             },
 
             subtitle: {
-                text: 'Source: thesolarfoundation.com'
+                text: ''
             },
 
             yAxis: {

@@ -82,17 +82,16 @@
         </div>
 
         <ul class="nav">
+<!--            <li class="{{ Request::is('/') ? 'active' : '' }}">-->
+<!--                <a href="/">-->
+<!--                    <i class="pe-7s-graph"></i>-->
+<!---->
+<!--                    <p>Dashboard</p>-->
+<!--                </a>-->
+<!--            </li>-->
             <li class="{{ Request::is('/') ? 'active' : '' }}">
-                <a href="/">
-                    <i class="pe-7s-graph"></i>
-
-                    <p>Dashboard</p>
-                </a>
-            </li>
-            <li class="{{ Request::is('mapa/paises') ? 'active' : '' }}">
-                <a href="{{ url('/mapa/paises') }}">
+                <a href="{{ url('/') }}">
                     <i class="pe-7s-map-marker"></i>
-
                     <p>Mapa Sismos</p>
                 </a>
             </li>
@@ -129,7 +128,7 @@
 <!--            </li>-->
             <li class="{{ Request::is('resumen/meses') ? 'active' : '' }}">
                 <a href="{{ url('/resumen/meses') }}">
-                    <i class="pe-7s-news-paper"></i>
+                    <i class="pe-7s-graph"></i>
                     <p>Registro mensual</p>
                 </a>
             </li>
