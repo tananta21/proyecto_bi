@@ -145,7 +145,9 @@ FROM
                                     ORDER BY
                                         dim_paises.id');
     }
-    public function resumenCategoriaCantidad($pais_id)    {
+
+    public function resumenCategoriaCantidad($pais_id)
+    {
         return $registro = \DB::select('SELECT
                                         dim_paises.nombre as name,
                                         COALESCE (
@@ -167,7 +169,39 @@ FROM
                                         dim_paises.id ');
     }
 
+    public function listaCategorias()
+    {
+        return $registro = \DB::select('SELECT id,descripcion FROM dim_intensidad');
+    }
 
+    public function historialAnos()
+    {
+        return $registro = \DB::select('SELECT YEAR(fact_sismos.fecha_sismo) as ano FROM fact_sismos GROUP BY YEAR(fact_sismos.fecha_sismo)');
+    }
+
+    public function historialByAno($cat,$pais){
+        return $registro = \DB::select('SELECT
+                    year(fecha_sismo) as ano,
+                    COUNT(*) as cant
+                FROM
+                    fact_sismos
+                WHERE
+                    pais_id = ' . $pais . ' AND
+                    intensidad_id = ' . $cat . '
+                GROUP BY year(fecha_sismo)');
+    }
+
+//    public function historialByAno($cat,$pais){
+//        return $registro = \DB::select('SELECT
+//                    year(fecha_sismo) as ano,
+//                    COUNT(*) as cant
+//                FROM
+//                    fact_sismos
+//                WHERE
+//                    pais_id = 1 AND
+//                    intensidad_id = 1
+//                GROUP BY year(fecha_sismo)');
+//    }
 
 
     public function all()

@@ -111,7 +111,7 @@
                             type: 'pie'
                         },
                         title: {
-                            text: 'PORCENTAJE (%) DE SISMOS REGISTRADOS POR CATEGORÍA EN ' + $("#selectPais option:selected").text()
+                            text: 'PORCENTAJE (%) DE SISMOS REGISTRADOS POR CATEGORÍA EN ' + $("#selectPais option:selected").text() +' DESDE 1970'
                         },
                         tooltip: {
                             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -144,7 +144,7 @@
                             type: 'column'
                         },
                         title: {
-                            text: 'N° DE SISMOS REGISTRADOS POR CATEGORÍA EN ' + $("#selectPais option:selected").text()
+                            text: 'N° DE SISMOS REGISTRADOS POR CATEGORÍA EN ' + $("#selectPais option:selected").text()+' DESDE 1970'
                         },
                         xAxis: {
                             type: 'category'

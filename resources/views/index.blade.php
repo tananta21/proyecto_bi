@@ -102,27 +102,31 @@
                     <p>Resumen países</p>
                 </a>
             </li>
+            <li class="{{ Request::is('historial/categorias') ? 'active' : '' }}">
+                <a href="{{ url('/historial/categorias') }}">
+                    <i class="pe-7s-news-paper"></i>
+                    <p>Historial categorias</p>
+                </a>
+            </li>
+
             <li class="{{ Request::is('categoria/sismos') ? 'active' : '' }}">
                 <a href="{{ url('/categoria/sismos') }}">
                     <i class="pe-7s-news-paper"></i>
                     <p>Resumen categorias</p>
                 </a>
             </li>
-
-
             <li class="{{ Request::is('sismos/fuertes') ? 'active' : '' }}">
                 <a href="{{ url('/sismos/fuertes') }}">
                     <i class="pe-7s-note2"></i>
                     <p>Sismos Fuertes</p>
                 </a>
             </li>
-            <li class="">
-                <a href="">
-                    <i class="pe-7s-note2"></i>
-                    <p>Tendencia Anual</p>
-                </a>
-            </li>
-
+<!--            <li class="">-->
+<!--                <a href="">-->
+<!--                    <i class="pe-7s-note2"></i>-->
+<!--                    <p>Tendencia Anual</p>-->
+<!--                </a>-->
+<!--            </li>-->
             <li class="{{ Request::is('resumen/meses') ? 'active' : '' }}">
                 <a href="{{ url('/resumen/meses') }}">
                     <i class="pe-7s-news-paper"></i>

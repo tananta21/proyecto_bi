@@ -86,7 +86,32 @@ Route::get('/api/categoria/sismos/',[
         'as'=> 'categoria.sismos',
         'uses'=>'DahsboardController@categoriaSismos']
 );
+Route::get('/api/lista/categoria/',[
+        'as'=> 'lista.categoria',
+        'uses'=>'DahsboardController@listaCategorias']
+);
+
 //================================================
+
+
+Route::get('/historial/categorias', function () {
+    return view('historial_categorias');
+});
+
+//api
+Route::get('/api/historial/categorias/ano',[
+        'as'=> 'historial.anos',
+        'uses'=>'DahsboardController@historialAnos']
+);
+
+Route::get('/api/historial/categoria/by_ano',[
+        'as'=> 'historial.by_ano',
+        'uses'=>'DahsboardController@historialByAno']
+);
+
+//================================================
+
+
 
 
 

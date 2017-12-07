@@ -115,7 +115,7 @@
                             type: 'pie'
                         },
                         title: {
-                            text: 'PORCENTAJE (%) DE SISMOS CATEGORÍA ' + $("#selectPais option:selected").text()+' REGISTRADOS EN SUDAMÉRICA'
+                            text: 'PORCENTAJE (%) DE SISMOS CATEGORÍA ' + $("#selectPais option:selected").text()+' REGISTRADOS EN SUDAMÉRICA DESDE 1970'
                         },
                         tooltip: {
                             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -143,12 +143,14 @@
                     });
                 }
                 else if(tipoGrafico == 1){
+                    console.log(barras);
                     Highcharts.chart('container', {
+
                         chart: {
                             type: 'column'
                         },
                         title: {
-                            text: 'N° DE SISMOS CATEGORÍA ' + $("#selectPais option:selected").text()+' REGISTRADOS EN SUDAMÉRICA'
+                            text: 'N° DE SISMOS CATEGORÍA ' + $("#selectPais option:selected").text()+'REGISTRADOS EN SUDAMÉRICA DESDE 1970'
                         },
                         xAxis: {
                             type: 'category'

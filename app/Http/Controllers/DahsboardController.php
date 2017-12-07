@@ -21,7 +21,9 @@ class DahsboardController extends Controller
     {
         //
     }
-    public function cantidadSismos(){
+
+    public function cantidadSismos()
+    {
         $pais_id = Input::get('pais_id');
         $query = $this->repoFactSismo->cantidadSismos($pais_id);
         $datos = array($query);
@@ -65,13 +67,11 @@ class DahsboardController extends Controller
             } else {
                 $query = $this->repoFactSismo->mapaPaisesDetail($pais_id);
             }
-        }
-        else{
+        } else {
             if ($pais_id == 15) {
                 $query = $this->repoFactSismo->mapaPaisesIntens($inten_id);
-            }
-            else{
-                $query = $this->repoFactSismo->mapaPaisesIntensDetail($pais_id,$inten_id);
+            } else {
+                $query = $this->repoFactSismo->mapaPaisesIntensDetail($pais_id, $inten_id);
             }
         }
         $datos = array($query);
@@ -82,7 +82,8 @@ class DahsboardController extends Controller
         }
     }
 
-    public function detalleSismo(){
+    public function detalleSismo()
+    {
         $sismo_id = Input::get('sismo_id');
         $query = $this->repoFactSismo->detalleSismo($sismo_id);
         $datos = array($query);
@@ -97,10 +98,9 @@ class DahsboardController extends Controller
     {
         $pais_id = Input::get('pais_id');
         $tipo_graph = Input::get('tipo_graph');
-        if($tipo_graph==2){
-        $query = $this->repoFactSismo->resumenPaisesPorcen($pais_id);
-        }
-        else{
+        if ($tipo_graph == 2) {
+            $query = $this->repoFactSismo->resumenPaisesPorcen($pais_id);
+        } else {
             $query = $this->repoFactSismo->resumenPaisesCantidad($pais_id);
         }
         $datos = array($query);
@@ -115,10 +115,9 @@ class DahsboardController extends Controller
     {
         $pais_id = Input::get('pais_id');
         $tipo_graph = Input::get('tipo_graph');
-        if($tipo_graph==2){
+        if ($tipo_graph == 2) {
             $query = $this->repoFactSismo->resumenCategoriaPorcen($pais_id);
-        }
-        else{
+        } else {
             $query = $this->repoFactSismo->resumenCategoriaCantidad($pais_id);
         }
         $datos = array($query);
@@ -128,6 +127,41 @@ class DahsboardController extends Controller
             return response()->json($datos);
         }
     }
+
+    public function listaCategorias()
+    {
+        $query = $this->repoFactSismo->listaCategorias();
+        $datos = array($query);
+        if (empty($datos)) {
+            return 0;
+        } else {
+            return response()->json($datos);
+        }
+    }
+
+    public function historialAnos()
+    {
+        $query = $this->repoFactSismo->historialAnos();
+        $datos = array($query);
+        if (empty($datos)) {
+            return 0;
+        } else {
+            return response()->json($datos);
+        }
+    }
+    public function historialByAno()
+    {
+        $cat = Input::get('cat');
+        $pais = Input::get('pais');
+        $query = $this->repoFactSismo->historialByAno($cat,$pais);
+        $datos = array($query);
+        if (empty($datos)) {
+            return 0;
+        } else {
+            return response()->json($datos);
+        }
+    }
+
 
 
     /**
