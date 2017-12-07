@@ -11,6 +11,12 @@
                 <option value="2">BRAZIL</option>
                 <option value="3">BOLIVIA</option>
                 <option value="4">ECUADOR</option>
+                <option value="5">COLOMBIA</option>
+                <option value="6">URUGUAY</option>
+                <option value="7">VENEZUELA</option>
+                <option value="8">CHILE</option>
+                <option value="9">PARAGUAY</option>
+                <option value="10">ARGENTINA</option>
             </select>
         </div>
         <label style="padding-top: 10px; padding-left: 20px; padding-right: 0rem" for="selectPais"
